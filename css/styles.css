@@ -1,0 +1,77 @@
+/* Estilos generales de la pagina */
+body
+{
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos de los elementos de la barra de navegacion */
+.barra-navegacion
+{
+    background-color: blueviolet;
+    margin: 0;
+    padding: 0;
+}
+.barra-navegacion ul
+{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+.barra-navegacion ul li
+{
+    list-style: none;
+    padding: 1em;
+}
+
+/* Estilos de los elementos de las recetas*/
+.recetas img
+{
+    max-width: 100%;
+}
+
+/* Estilos de los titulos*/
+.titulos h2, h3
+{
+    text-align: center;
+    font-size: 2em;
+}
+
+/* Estilos del formulario */
+.formulario
+{
+    padding: 1em;
+}
+.formulario div
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+.formulario div label
+{
+    text-align: center;
+}
+.formulario button
+{
+    width: 100%;
+}
+
+/* Estilos de pie de pagina */
+.pie-pagina
+{
+    background-color: blueviolet;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.pie-pagina p 
+{
+    margin: 0 !important;
+    color: white;
+}
