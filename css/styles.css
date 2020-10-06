@@ -4,6 +4,14 @@ body
     margin: 0;
     padding: 0;
 }
+p, li, a
+{
+    font-family: 'Open Sans', sans-serif;
+}
+form 
+{
+    padding: 0 !important;
+}
 
 /* Estilos de los elementos de la barra de navegacion */
 .barra-navegacion
@@ -24,6 +32,19 @@ body
 {
     list-style: none;
     padding: 1em;
+    transition: all 0.5s;
+    border: 1px solid grey;
+    border-radius: 20px;
+    margin: 5px;
+}
+.barra-navegacion ul li:hover
+{
+    background-color: teal;
+}
+.barra-navegacion ul li a
+{
+    color: thistle;
+    text-decoration: none;
 }
 
 /* Estilos de los elementos de las recetas*/
@@ -37,27 +58,42 @@ body
 {
     text-align: center;
     font-size: 2em;
+    font-family: 'Piazzolla', serif;
 }
 
 /* Estilos del formulario */
 .formulario
 {
+    width: 100%;
     padding: 1em;
 }
 .formulario div
 {
-    width: 100%;
+    width: 100% !important;
     display: flex;
     flex-direction: column;
-    margin-bottom: 1em;
+    margin: 1em;
 }
-.formulario div label
+.formulario div label, input, textarea
 {
+    width: 90%;
     text-align: center;
 }
 .formulario button
 {
-    width: 100%;
+    width: 90%;
+    background-color: cadetblue;
+    color: cornsilk;
+    padding: 1em;
+    border-radius: 20px;
+    border: solid 1px black;
+    transition: all 0.5s;
+}
+.formulario button:hover
+{
+    background-color: crimson;
+    color: cornsilk;
+    cursor: pointer;
 }
 
 /* Estilos de pie de pagina */
@@ -74,4 +110,64 @@ body
 {
     margin: 0 !important;
     color: white;
+}
+
+
+
+/* Estilos de paneles */
+.panel-row
+{
+    display: flex;
+    height: 100%;
+    border: solid 1px black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.panel-row div
+{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+.panel-row div img
+{
+    max-width: 100%;
+}
+.map
+{
+    max-width: 100%;
+    margin: 0 !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2em;
+}
+
+/* Clases de ejemplo con javascript */
+.disminuir
+{
+    width: 20% !important;
+    transition: all 0.5s;
+}
+.original
+{
+    width: 100%;
+    transition: all 0.5s;
+}
+
+@media (max-width: 690px)
+{
+    .panel-row
+    {
+        flex-direction: column;
+    }
+    .panel-row div
+    {
+        width: 100%;
+    }
 }
